@@ -8,11 +8,14 @@ DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY")
 DEEPSEEK_API_URL = "https://api.deepseek.com/chat/completions"
 
 RSS_FEEDS = [
-    "https://rsshub.app/36kr/newsflashes",
+    # 直接 RSS 源（更稳定）
+    "https://36kr.com/feed",
+    "https://www.huxiu.com/rss/0.xml",
+    "https://www.ithome.com/rss/",
+    "https://sspai.com/feed",
+    # RSSHub 源（作为补充）
     "https://rsshub.app/jiqizhixin/posts",
     "https://rsshub.app/qbitai",
-    "https://rsshub.app/huxiu/rss",
-]
 
 def fetch_all_news():
     all_articles = []
