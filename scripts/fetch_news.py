@@ -16,6 +16,7 @@ RSS_FEEDS = [
     # RSSHub 源（作为补充）
     "https://rsshub.app/jiqizhixin/posts",
     "https://rsshub.app/qbitai",
+]
 
 def fetch_all_news():
     all_articles = []
